@@ -1,0 +1,10 @@
+#!/bin/bash
+
+yarn run lint
+
+if [ $? -ne 0 ]; then
+    echo "[ERROR] ESLint failed!"
+    exit 1
+fi
+
+echo "[SUCCESS] ESLint passed!"
