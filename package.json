@@ -1,41 +1,48 @@
 {
-    "name": "html-and-css-practice",
-    "version": "1.0.0",
-    "homepage": "",
-    "repository": "",
-    "author": "Roman Dmiterko",
-    "license": "MIT",
-    "scripts": {
-        "preinstall": "git config core.hooksPath hooks || (echo 'Error configuring hooks path' && exit 1)",
-        "dev": "parcel *.html",
-        "build": "parcel build *.html --public-url './'",
-        "deploy": "yarn build && gh-pages -d dist",
-        "lint": "eslint js/**/*.js",
-        "lint:fix": "eslint js/**/*.js --fix",
-        "lint-staged": "lint-staged"
-    },
-    "devDependencies": {
-        "@eslint/js": "9.16.0",
-        "@parcel/resolver-default": "2.13.2",
-        "@parcel/transformer-less": "2.8.0",
-        "eslint": "9.17.0",
-        "gh-pages": "3.2.3",
-        "globals": "15.13.0",
-        "less": "4.1.3",
-        "lint-staged": "15.2.11",
-        "npm-package-json-lint": "8.0.0",
-        "parcel": "2.8.0",
-        "prettier": "3.4.2",
-        "stylelint": "16.12.0"
-    },
-    "lint-staged": {
-        "js/**/*.js": [
-            "npx eslint --fix",
-            "npx prettier --write"
-        ],
-        "*.{html,css,json}": [
-            "npx prettier --write"
-        ]
-    },
-    "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "name": "html-and-css-practice",
+  "version": "1.0.0",
+  "homepage": "",
+  "repository": "",
+  "author": "Roman Dmiterko",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "git config core.hooksPath hooks || (echo 'Error configuring hooks path' && exit 1)",
+    "dev": "parcel *.html",
+    "build": "parcel build *.html --public-url './'",
+    "deploy": "yarn build && gh-pages -d dist",
+    "lint": "eslint js/**/*.js",
+    "lint:fix": "eslint js/**/*.js --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.17.0",
+    "@parcel/resolver-default": "2.13.3",
+    "@parcel/transformer-less": "2.13.3",
+    "eslint": "9.17.0",
+    "gh-pages": "6.2.0",
+    "less": "4.2.1",
+    "lint-staged": "15.2.11",
+    "parcel": "2.13.3",
+    "prettier": "3.4.2"
+  },
+  "resolutions": {
+    "@eslint/js": "9.17.0",
+    "@parcel/resolver-default": "2.13.3",
+    "@parcel/transformer-less": "2.13.3",
+    "eslint": "9.17.0",
+    "gh-pages": "6.2.0",
+    "less": "4.2.1",
+    "lint-staged": "15.2.11",
+    "parcel": "2.13.3",
+    "prettier": "3.4.2"
+  },
+  "lint-staged": {
+    "js/**/*.js": [
+      "yarn eslint --fix",
+      "yarn prettier --write"
+    ],
+    "*.{html,css,json}": [
+      "yarn prettier --write"
+    ]
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
