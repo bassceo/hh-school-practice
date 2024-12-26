@@ -6,7 +6,7 @@
   "author": "Roman Dmiterko",
   "license": "MIT",
   "scripts": {
-    "preinstall": "git config core.hooksPath hooks || (echo 'Error configuring hooks path' && exit 1)",
+    "preinstall": "git config core.hooksPath hooks || echo 'Error configuring hooks path'",
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist",
