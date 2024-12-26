@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "",
   "repository": "",
-  "author": "Roman Dmiterko",
+  "author": "Yaroslav Lukyanchuk",
   "license": "MIT",
   "scripts": {
     "preinstall": "git config core.hooksPath hooks || echo 'Error configuring hooks path'",
