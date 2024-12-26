@@ -1,0 +1,36 @@
+@service-background: #EEEEEE;
+
+.services {
+    background-color: @service-background;
+    margin-top: 30px;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+
+    @media @gt-mobile {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    @media @gt-tablet {
+        padding: 40px 0;
+    }
+}
+
+.services__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.services__text {
+    margin-left: 20px;
+    font-size: 16px;
+
+    @media @gt-tablet {
+        margin-left: 30px;
+    }
+}
