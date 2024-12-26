@@ -8,7 +8,7 @@
   "scripts": {
     "preinstall": "git config core.hooksPath hooks || echo 'Error configuring hooks path'",
     "dev": "parcel *.html",
-    "build": "parcel build *.html --public-url './'",
+    "build": "parcel build *.html --public-url ./",
     "deploy": "yarn build && gh-pages -d dist",
     "lint": "eslint js/**/*.js",
     "lint:fix": "eslint js/**/*.js --fix"
